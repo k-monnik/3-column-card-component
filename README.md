@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://kmonnik-3-column-card-component.netlify.app/)
 
 ### Built with
 
