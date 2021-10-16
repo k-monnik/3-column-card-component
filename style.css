@@ -1,0 +1,135 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --grey: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--grey);
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.btn {
+  background-color: var(--grey);
+  border: 2px solid var(--grey);
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bright-orange {
+  background-color: var(--bright-orange);
+  color: var(--white);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bright-orange .btn {
+  color: var(--bright-orange);
+}
+
+.dark-cyan {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+}
+
+.dark-cyan .btn {
+  color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.very-dark-cyan .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--grey);
+}
+
+.container {
+  padding: 20px;
+  max-width: 350px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.card {
+  padding: 40px;
+}
+
+.card img {
+  margin-bottom: 22px;
+}
+
+.card h3 {
+  margin-bottom: 18px;
+}
+
+.card p {
+  margin-bottom: 22px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: blue;
+}
+
+/* Desktop styling */
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .bright-orange {
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .very-dark-cyan {
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  .card {
+    padding: 45px;
+  }
+
+  .card p {
+    margin-bottom: 80px;
+  }
+}
